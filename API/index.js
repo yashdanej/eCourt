@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 // Serve static files from the 'public' directory
 app.use('/uploads', express.static(path.join(__dirname, 'public/uploads')));
 
-const authRouter = require("./routes/auth/authRouter");
+const authRouter = require("./routes/authRouter");
 
 app.use('/api/v1', authRouter);
 

@@ -1,9 +1,9 @@
 const bcrypt = require('bcrypt');
 const { v4: uuidv4 } = require('uuid');
 const util = require('util');
-const db = require("../../db");
+const db = require("../db");
 const jwt = require("jsonwebtoken");
-const { verifyToken } = require('../../middleware/verifyToken');
+// const { verifyToken } = require('../../middleware/verifyToken');
 
 const query = util.promisify(db.query).bind(db);
 
